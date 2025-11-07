@@ -99,3 +99,14 @@ a:hover {
     height: 446px;
   }
 }
+
+/* Desktop */
+@media (min-width: 1280px) {
+  body {
+    padding-top: 4.8675rem;
+  }
+  main {
+    margin: 0 auto;
+    width: 792px;
+  }
+}
