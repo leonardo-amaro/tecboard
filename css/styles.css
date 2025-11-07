@@ -19,14 +19,14 @@ body {
 }
 
 h1,
-button {
+a {
   font-weight: var(--bold);
 }
 
 p {
   margin: 1.5rem 0;
   font-weight: var(--regular);
-  font-size: 14pt;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -39,33 +39,36 @@ header {
 
 h1 {
   font-family: "Unbounded", sans-serif;
-  font-size: 30pt;
+  font-size: 40px;
   text-align: center;
   & span {
     color: var(--roxo-destaque);
   }
 }
 
-#botao-primario {
-  border: none;
+a {
+  display: block;
   border-radius: 36px;
-  padding: 12px 24px;
+  width: 251px;
+  margin: 40px auto;
+  padding: 24px;
 
   background-color: var(--roxo-destaque);
   color: var(--offwhite);
   font-family: var(--poppins);
-  font-size: 14pt;
+  font-size: 18px;
+  text-align: center;
 
   transition: background-color 600ms;
   transition-timing-function: ease-out;
 }
 
-#botao-primario:hover {
+a:hover {
   cursor: pointer;
   background-color: var(--roxo-hover);
 }
 
-.secao {
+.secao-imagem {
   margin: 1rem 0;
   display: flex;
   align-items: center;
