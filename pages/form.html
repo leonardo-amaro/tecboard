@@ -4,10 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../svg/Favicon1.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Unbounded:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Cadastre-se | Tecboard</title>
   </head>
 
   <body>
-    <h1>Cadastre-se</h1>
+    <header>
+      <img src="../img/logo-black.png" alt="logo da Tecboard" />
+      <img src="../img/dark.png" alt="icone do modo escuro" />
+    </header>
+
+    <main>
+      <h1>Cadastre-se!</h1>
+      <p>
+        Preencha o formulário abaixo com seus dados para receber o acesso
+        antecipado à versão demo do Tecboard
+      </p>
+      <form action="">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+
+          <label for="userName">Nome</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Digite seu nome..."
+            required
+          />
+
+          <label for="birthDate">Data de nascimento</label>
+          <input type="date" name="birthDate" id="birthDate" required />
+
+          <label for="userMail">E-mail</label>
+          <input
+            type="email"
+            name="userMail"
+            id="userMail"
+            placeholder="Seu melhor e-mail..."
+            required
+          />
+
+          <label for="userPhone">Telefone</label>
+          <input
+            type="tel"
+            name="userPhone"
+            id="userPhone"
+            pattern="[0-9]{11}"
+            placeholder="11912345678"
+          />
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
   </body>
 </html>
