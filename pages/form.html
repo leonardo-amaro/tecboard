@@ -23,12 +23,12 @@
     </header>
 
     <main>
-      <h1>Cadastre-se!</h1>
+      <h1 id="titulo">Cadastre-se!</h1>
       <p>
         Preencha o formulário abaixo com seus dados para receber o acesso
         antecipado à versão demo do Tecboard
       </p>
-      <form action="./success.html">
+      <form action="./success.html" aria-labelledby="titulo">
         <fieldset>
           <legend>Dados pessoais</legend>
 
@@ -60,7 +60,12 @@
             id="userPhone"
             pattern="[0-9]{11}"
             placeholder="11912345678"
+            aria-describedby="phoneHelp"
           />
+          <small id="phoneHelp">
+            Preencha com seu número de telefone no formato: DDD + número sem
+            espaços ou hífen.
+          </small>
         </fieldset>
 
         <button type="submit">Enviar</button>
