@@ -73,8 +73,8 @@ a:hover {
 .secao-imagem img {
   display: block;
   margin: 1.5rem auto 0;
-  width: 332.48px;
-  height: 230.61px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Tablet */
@@ -91,10 +91,6 @@ a:hover {
   }
   a {
     width: 340px;
-  }
-  .secao-imagem img {
-    width: 624px;
-    height: 446px;
   }
 }
 
