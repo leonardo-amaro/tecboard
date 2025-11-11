@@ -70,10 +70,9 @@ a:hover {
   background-color: var(--roxo-hover);
 }
 
-.secao-imagem {
-  margin: 1.5rem auto 0;
+.secao-imagem img {
   display: block;
-  background-image: url("../img/image-sm.png");
+  margin: 1.5rem auto 0;
   width: 332.48px;
   height: 230.61px;
 }
@@ -93,8 +92,7 @@ a:hover {
   a {
     width: 340px;
   }
-  .secao-imagem {
-    background-image: url("../img/image-lg.png");
+  .secao-imagem img {
     width: 624px;
     height: 446px;
   }
